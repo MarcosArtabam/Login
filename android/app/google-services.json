@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "950995253198",
+    "project_id": "loginpsi-787cd",
+    "storage_bucket": "loginpsi-787cd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:950995253198:android:2d554bdda8bc3e65a5dd9f",
+        "android_client_info": {
+          "package_name": "com.example.login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "950995253198-p0jt0ng7hsgtif9kudioa9k7fgmpc3pq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApwnyZHJgO9JRVwV1DlhiR7NDZNLFPpgw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "950995253198-p0jt0ng7hsgtif9kudioa9k7fgmpc3pq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

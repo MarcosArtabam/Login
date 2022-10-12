@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:login/screams/Home/HomePage_Inicial.dart';
+import 'package:login/screams/Home/HomePage_Initial.dart';
+import 'package:login/screams/login/LoginPage.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -12,9 +13,9 @@ class HomePage extends StatelessWidget {
       stream: FirebaseAuth.instance.authStateChanges(),
       builder: ((context, snapshot) {
         if (snapshot.hasData) {
-          return HomePage_Inicial();
+          return HomePage_Initial();
         } else {
-          return HomePage();
+          return LoginPage();
         }
       }),
     ));

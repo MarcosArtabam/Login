@@ -17,9 +17,14 @@ class _LoginPageState extends State<LoginPage> {
   final _SenhaController = TextEditingController();
 
   Future SignIn() async {
-    await FirebaseAuth.instance.signInWithEmailAndPassword(
-        email: _EmailController.text.trim(),
-        password: _SenhaController.text.trim());
+    try {
+      await FirebaseAuth.instance.signInWithEmailAndPassword(
+          email: _EmailController.text.trim(),
+          password: _SenhaController.text.trim());
+    } on FirebaseAuthException catch (e) {
+      ScaffoldMessenger.of(context)
+          .showSnackBar(SnackBar(content: Text('Email ou senha incorretos')));
+    }
   }
 
   @override
